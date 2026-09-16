@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nihar Ramoliya — Machine Learning & Data Science Engineer</title>
+  <meta name="description" content="Portfolio of Nihar Ramoliya, Machine Learning & Data Science Engineer specializing in predictive modeling, exploratory data analysis, and interactive dashboard solutions.">
+  <meta name="keywords" content="Nihar Ramoliya, Machine Learning Engineer, Data Science, Python Developer, AI Engineer, Scikit-Learn, Streamlit, Portfolio">
+  <meta name="author" content="Nihar Ramoliya">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nihar Ramoliya — Machine Learning Engineer Portfolio">
+  <meta property="og:description" content="Machine Learning & Data Science Engineer. Specializing in predictive modeling, exploratory data analysis, and interactive dashboards.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- Header / Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Nihar Ramoliya Home">
+        <span class="logo-accent">&lt;</span>NR<span class="logo-accent">/&gt;</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="mailto:nihar.ramoliya05@gmail.com" class="btn btn-primary btn-sm nav-cta">Get In Touch</a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button class="mobile-menu-btn" id="mobile-toggle" aria-label="Open mobile menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="pulse-dot"></span>
+            <span>Available for ML &amp; Data Science Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Nihar Ramoliya</span>
+          </h1>
+
+          <p class="hero-role">
+            Machine Learning Engineer <span class="role-divider">|</span> Data Science <span class="role-divider">|</span> Python Developer
+          </p>
+
+          <p class="hero-description">
+            Recent BCA graduate with an intensive Machine Learning internship, specializing in building end-to-end predictive models, deriving high-impact actionable insights, and deploying interactive Streamlit analytical dashboards.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+
+            <button class="btn btn-secondary" id="copy-email-hero" data-email="nihar.ramoliya05@gmail.com">
+              <svg class="copy-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              <span class="copy-text">Copy Email</span>
+            </button>
+
+            <a href="https://github.com/niharr05" target="_blank" rel="noopener noreferrer" class="btn btn-icon" aria-label="GitHub Profile" title="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+
+            <a href="https://www.linkedin.com/in/nihar-ramoliya-ml" target="_blank" rel="noopener noreferrer" class="btn btn-icon" aria-label="LinkedIn Profile" title="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+
+          <!-- Hero Metrics Bar -->
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <div class="metric-value">50K+</div>
+              <div class="metric-label">Records Explored &amp; Cleaned</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value">92%</div>
+              <div class="metric-label">Prediction Accuracy Achieved</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value">30%</div>
+              <div class="metric-label">Preprocessing Time Reduced</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value">4+</div>
+              <div class="metric-label">Featured Projects &amp; Systems</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-aside">
+          <!-- Terminal-like profile showcase card -->
+          <div class="code-card">
+            <div class="code-header">
+              <span class="code-dot dot-red"></span>
+              <span class="code-dot dot-yellow"></span>
+              <span class="code-dot dot-green"></span>
+              <span class="code-filename">nihar_profile.py</span>
+            </div>
+            <div class="code-body">
+              <pre><code><span class="code-keyword">class</span> <span class="code-class">MachineLearningEngineer</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(self):
+        self.name = <span class="code-string">"Nihar Ramoliya"</span>
+        self.location = <span class="code-string">"Ahmedabad, Gujarat"</span>
+        self.education = <span class="code-string">"BCA (Graduated 2026)"</span>
+        self.core_stack = [
+            <span class="code-string">"Python"</span>, <span class="code-string">"Scikit-learn"</span>, 
+            <span class="code-string">"Pandas"</span>, <span class="code-string">"SQL"</span>, <span class="code-string">"Streamlit"</span>
+        ]
+        self.focus_areas = [
+            <span class="code-string">"Predictive Modeling"</span>,
+            <span class="code-string">"Customer Churn Analytics"</span>,
+            <span class="code-string">"Retail Margin Clustering"</span>
+        ]
+
+    <span class="code-keyword">def</span> <span class="code-func">status</span>(self):
+        <span class="code-keyword">return</span> <span class="code-string">"Ready to drive business intelligence 🚀"</span></code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Overview</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-content">
+            <p class="about-lead">
+              I am a results-oriented Machine Learning and Data Science practitioner passionate about turning noisy, raw data into clear predictive signals and strategic business decisions.
+            </p>
+            <p>
+              Having completed an intensive 3-month Machine Learning internship at <strong>Unified Mentor Pvt. Ltd.</strong>, I have worked directly on enterprise-level business datasets: from analyzing retail supply chain stockout risks to segmenting multi-national banking customer churn behaviors.
+            </p>
+            <p>
+              My approach blends rigorous exploratory data analysis (EDA), feature engineering, statistical modeling with Scikit-learn, and user-centric dashboard engineering using Streamlit and Plotly. I pride myself on clear communication and authoring reproducible, IEEE-style technical documentation for technical and cross-functional stakeholders.
+            </p>
+
+            <div class="about-highlights-row">
+              <div class="highlight-item">
+                <div class="highlight-icon">📍</div>
+                <div class="highlight-info">
+                  <div class="highlight-title">Location</div>
+                  <div class="highlight-sub">Ahmedabad, Gujarat, India</div>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">🎓</div>
+                <div class="highlight-info">
+                  <div class="highlight-title">Degree</div>
+                  <div class="highlight-sub">BCA (SVGU, 2026)</div>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">💼</div>
+                <div class="highlight-info">
+                  <div class="highlight-title">Experience</div>
+                  <div class="highlight-sub">ML Intern (Unified Mentor)</div>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">🌐</div>
+                <div class="highlight-info">
+                  <div class="highlight-title">Languages</div>
+                  <div class="highlight-sub">English, Hindi, Gujarati</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-pillars">
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+              </div>
+              <h3>Predictive Modeling</h3>
+              <p>End-to-end supervised and unsupervised model pipelines with Scikit-learn, achieving up to 92% prediction accuracy on real customer datasets.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              </div>
+              <h3>EDA &amp; Feature Engineering</h3>
+              <p>Extracting high-leverage signals from messy datasets, reducing processing overhead by 30% through automated pipeline implementation.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+              </div>
+              <h3>Interactive Dashboards</h3>
+              <p>Transforming complex model outputs into interactive Streamlit &amp; Plotly applications with filters, scenario simulation, and alert systems.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              </div>
+              <h3>Technical Documentation</h3>
+              <p>Producing IEEE-standard research reports, clear metric evaluations, and reproducible codebase architectures for cross-functional teams.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Capabilities</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">A curated view of tools, frameworks, and techniques I utilize across the data &amp; ML lifecycle.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Card 1: Languages -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <span class="category-icon">💻</span>
+              <h3 class="category-title">Programming Languages</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag highlight-tag">Python</span>
+              <span class="skill-tag highlight-tag">SQL</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Machine Learning -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <span class="category-icon">🤖</span>
+              <h3 class="category-title">Machine Learning</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Supervised Learning</span>
+              <span class="skill-tag">Unsupervised Learning</span>
+              <span class="skill-tag">Classification</span>
+              <span class="skill-tag">Regression</span>
+              <span class="skill-tag">K-Means Clustering</span>
+              <span class="skill-tag">Stockout Prediction</span>
+              <span class="skill-tag">Customer Churn</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Libraries & Frameworks -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <span class="category-icon">📚</span>
+              <h3 class="category-title">Libraries &amp; Frameworks</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag highlight-tag">Pandas</span>
+              <span class="skill-tag highlight-tag">NumPy</span>
+              <span class="skill-tag highlight-tag">Scikit-learn</span>
+              <span class="skill-tag">Matplotlib</span>
+              <span class="skill-tag">Seaborn</span>
+              <span class="skill-tag">TensorFlow</span>
+              <span class="skill-tag highlight-tag">Streamlit</span>
+              <span class="skill-tag">Plotly</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Data & Analytics -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <span class="category-icon">📊</span>
+              <h3 class="category-title">Data &amp; Analytics</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Exploratory Data Analysis (EDA)</span>
+              <span class="skill-tag">Data Cleaning &amp; Imputation</span>
+              <span class="skill-tag">Feature Selection &amp; Engineering</span>
+              <span class="skill-tag">Data Visualization</span>
+              <span class="skill-tag">Predictive Modeling</span>
+              <span class="skill-tag">Business Intelligence (BI)</span>
+              <span class="skill-tag">Pareto Analysis</span>
+            </div>
+          </div>
+
+          <!-- Card 5: Databases & Tools -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <span class="category-icon">⚙️</span>
+              <h3 class="category-title">Databases &amp; Platforms</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">Jupyter Notebook</span>
+              <span class="skill-tag">Google Colab</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Microsoft Excel</span>
+              <span class="skill-tag">Power BI</span>
+            </div>
+          </div>
+
+          <!-- Card 6: Soft Skills -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <span class="category-icon">💡</span>
+              <h3 class="category-title">Professional &amp; Soft Skills</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Problem Solving</span>
+              <span class="skill-tag">Critical Thinking</span>
+              <span class="skill-tag">Technical Communication</span>
+              <span class="skill-tag">IEEE-style Reporting</span>
+              <span class="skill-tag">Teamwork &amp; Collaboration</span>
+              <span class="skill-tag">Time Management</span>
+              <span class="skill-tag">Adaptability</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career History</span>
+          <h2 class="section-title">Internship Experience</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Machine Learning Intern</h3>
+                  <div class="company-name">Unified Mentor Pvt. Ltd.</div>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-badge">April 2026 – July 2026</span>
+                  <span class="timeline-badge badge-duration">3 Months</span>
+                </div>
+              </div>
+
+              <p class="timeline-summary">
+                Executed end-to-end machine learning workflows for retail operations and European financial datasets, designing predictive algorithms, automating data preprocessing pipelines, and delivering production-ready interactive dashboards.
+              </p>
+
+              <ul class="timeline-points">
+                <li>
+                  <strong>Predictive Modeling &amp; Baseline Improvement:</strong> Developed predictive models for retail operations, including a Stockout Prediction system and Customer Churn analysis, achieving statistically significant improvements over baseline models via Scikit-learn.
+                </li>
+                <li>
+                  <strong>Feature Engineering:</strong> Engineered 8+ high-impact features from raw transactional data to improve model interpretability, utilizing Python, Pandas, and NumPy to streamline preprocessing and feature selection.
+                </li>
+                <li>
+                  <strong>Large-Scale EDA:</strong> Conducted comprehensive Exploratory Data Analysis on 50,000+ records to pinpoint key patterns, outliers, and data quality flaws, cutting preprocessing latency by 30% through automated pipeline implementation.
+                </li>
+                <li>
+                  <strong>Interactive Dashboard Solutions:</strong> Built modular web dashboards using Streamlit and Plotly to present complex findings (such as product profitability concentration and regional churn divides) to stakeholders for data-driven decisions.
+                </li>
+                <li>
+                  <strong>End-to-End Execution:</strong> Managed data collection, cleaning, feature engineering, model training, cross-validation, and deployment, achieving 92% prediction accuracy on core customer behavior datasets.
+                </li>
+                <li>
+                  <strong>Technical &amp; Academic Documentation:</strong> Authored detailed technical documentation and IEEE-style research reports detailing model architectures, evaluation metrics, and experimental results to guarantee reproducibility.
+                </li>
+              </ul>
+
+              <div class="timeline-tags">
+                <span class="mini-tag">Python</span>
+                <span class="mini-tag">Scikit-learn</span>
+                <span class="mini-tag">Pandas</span>
+                <span class="mini-tag">NumPy</span>
+                <span class="mini-tag">Streamlit</span>
+                <span class="mini-tag">Plotly</span>
+                <span class="mini-tag">K-Means</span>
+                <span class="mini-tag">IEEE Reporting</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Projects &amp; Case Studies</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">Real-world data science, machine learning models, and interactive analytical applications.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Nassau Candy -->
+          <article class="project-card">
+            <div class="project-card-banner">
+              <div class="banner-badge">ML Internship Project</div>
+              <div class="banner-date">Apr – Jul 2026</div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Product Line Profitability &amp; Margin Analysis</h3>
+              <div class="project-subtitle">Client / Scenario: Nassau Candy &bull; Unified Mentor Pvt. Ltd.</div>
+
+              <p class="project-desc">
+                Built an end-to-end ML-powered profitability analysis system analyzing 10,194 real order records across 15 products and 3 operational divisions to expose margin vulnerabilities and product portfolio concentration risks.
+              </p>
+
+              <div class="project-highlights">
+                <div class="highlight-bullet">
+                  <span class="bullet-icon">&#10003;</span>
+                  <span><strong>Pareto Analysis:</strong> Uncovered that 4 products drive 80% of total company profits, identifying a structural revenue concentration risk.</span>
+                </div>
+                <div class="highlight-bullet">
+                  <span class="bullet-icon">&#10003;</span>
+                  <span><strong>K-Means Clustering (k=3):</strong> Leveraged StandardScaler to automatically segment product lines into Stars, Average, and Dead Weight tiers.</span>
+                </div>
+                <div class="highlight-bullet">
+                  <span class="bullet-icon">&#10003;</span>
+                  <span><strong>Pricing Vulnerability:</strong> Flagged Kazookles at 8% gross margin (critical risk) while validating 5 Wonka Bar variants at 65–71% margin.</span>
+                </div>
+                <div class="highlight-bullet">
+                  <span class="bullet-icon">&#10003;</span>
+                  <span><strong>5-Module Streamlit Dashboard:</strong> Equipped with division filters, dynamic date-range selector, and live margin threshold alerts.</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Pandas</span>
+                <span class="tech-pill">Scikit-learn</span>
+                <span class="tech-pill">K-Means</span>
+                <span class="tech-pill">Streamlit</span>
+                <span class="tech-pill">Plotly</span>
+                <span class="tech-pill">Matplotlib</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm open-modal-btn" data-modal="modal-nassau">
+                  <span>View Case Details</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </button>
+                <a href="https://github.com/niharr05" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">
+                  <span>GitHub</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: European Bank -->
+          <article class="project-card">
+            <div class="project-card-banner banner-accent">
+              <div class="banner-badge">ML Internship Project</div>
+              <div class="banner-date">Apr – Jul 2026</div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Customer Engagement &amp; Retention Analytics</h3>
+              <div class="project-subtitle">Client / Scenario: European Bank &bull; Unified Mentor Pvt. Ltd.</div>
+
+              <p class="project-desc">
+                Conducted deep-dive behavioral churn analytics across 10,000 multi-national customer records (France, Germany, Spain), demonstrating that client engagement metrics outpredict raw balances and salary in forecasting attrition.
+              </p>
+
+              <div class="project-highlights">
+                <div class="highlight-bullet">
+                  <span class="bullet-icon">&#10003;</span>
+                  <span><strong>Relationship Strength Index (RSI):</strong> Engineered composite metric proving inactive high-balance clients churn at 32.8% despite financial commitment.</span>
+                </div>
+                <div class="highlight-bullet">
+                  <span class="bullet-icon">&#10003;</span>
+                  <span><strong>K-Means Clustering (k=4):</strong> Stratified customers into Low Risk Loyal, Medium Risk, High Risk, and Critical Risk cohorts.</span>
+                </div>
+                <div class="highlight-bullet">
+                  <span class="bullet-icon">&#10003;</span>
+                  <span><strong>Geographical Divide:</strong> Identified Germany's churn rate at 32.4% — double France's 16.2%, highlighting an urgent region-specific retention issue.</span>
+                </div>
+                <div class="highlight-bullet">
+                  <span class="bullet-icon">&#10003;</span>
+                  <span><strong>IEEE-Style Research Paper:</strong> Published comprehensive documentation with 6 publication-quality charts alongside a 5-module Streamlit app.</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Scikit-learn</span>
+                <span class="tech-pill">Pandas</span>
+                <span class="tech-pill">K-Means</span>
+                <span class="tech-pill">Streamlit</span>
+                <span class="tech-pill">Seaborn</span>
+                <span class="tech-pill">Plotly</span>
+                <span class="tech-pill">Matplotlib</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm open-modal-btn" data-modal="modal-bank">
+                  <span>View Case Details</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </button>
+                <a href="https://github.com/niharr05" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">
+                  <span>GitHub</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: EduPredict AI -->
+          <article class="project-card">
+            <div class="project-card-banner banner-edupredict">
+              <div class="banner-badge">Machine Learning Web App</div>
+              <div class="banner-date">Open Source</div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">EduPredict AI — Student Performance Predictor</h3>
+              <div class="project-subtitle">Full-Stack ML Solution &bull; Flask &amp; Scikit-Learn</div>
+
+              <p class="project-desc">
+                A full-stack machine learning web application that predicts a student's final marks based on study hours, attendance percentage, and previous exam performance, featuring real-time inference and modern responsive UI.
+              </p>
+
+              <div class="project-highlights">
+                <div class="highlight-bullet">
+                  <span class="bullet-icon">&#10003;</span>
+                  <span><strong>Predictive Regression Engine:</strong> Trained Scikit-Learn machine learning pipeline delivering fast, accurate mark estimations.</span>
+                </div>
+                <div class="highlight-bullet">
+                  <span class="bullet-icon">&#10003;</span>
+                  <span><strong>Multi-Factor Feature Analysis:</strong> Evaluates study consistency, attendance rates, and historical academic scores.</span>
+                </div>
+                <div class="highlight-bullet">
+                  <span class="bullet-icon">&#10003;</span>
+                  <span><strong>Flask REST Backend:</strong> Seamless model serving with serialized artifacts (.pkl) and robust error handling.</span>
+                </div>
+                <div class="highlight-bullet">
+                  <span class="bullet-icon">&#10003;</span>
+                  <span><strong>Modern Responsive Interface:</strong> Built with clean layout, real-time feedback, and accessible form controls.</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Flask</span>
+                <span class="tech-pill">Scikit-Learn</span>
+                <span class="tech-pill">Pandas</span>
+                <span class="tech-pill">NumPy</span>
+                <span class="tech-pill">Tailwind CSS</span>
+                <span class="tech-pill">JavaScript</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm open-modal-btn" data-modal="modal-edupredict">
+                  <span>View Case Details</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </button>
+                <a href="https://github.com/niharr05/EduPredict-AI" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">
+                  <span>GitHub</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: FinCalc Pro -->
+          <article class="project-card">
+            <div class="project-card-banner banner-fincalc">
+              <div class="banner-badge">Financial Analytics Tool</div>
+              <div class="banner-date">Open Source</div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">FinCalc Pro — Compound Interest Calculator</h3>
+              <div class="project-subtitle">Financial Mathematics &bull; Pure JS &amp; Chart.js</div>
+
+              <p class="project-desc">
+                A modern, professional financial calculator crafted to simulate enterprise investment platforms, featuring dynamic compounding frequencies, interactive visual charts, automated financial insights, and PDF export.
+              </p>
+
+              <div class="project-highlights">
+                <div class="highlight-bullet">
+                  <span class="bullet-icon">&#10003;</span>
+                  <span><strong>Multi-Frequency Compounding:</strong> Computes maturity across Annually, Semi-Annually, Quarterly, Monthly, and Daily intervals.</span>
+                </div>
+                <div class="highlight-bullet">
+                  <span class="bullet-icon">&#10003;</span>
+                  <span><strong>Interactive Visual Charts:</strong> Toggle between Chart.js doughnut and bar breakdowns of Principal vs. Interest Earned.</span>
+                </div>
+                <div class="highlight-bullet">
+                  <span class="bullet-icon">&#10003;</span>
+                  <span><strong>Rule of 72 &amp; Wealth Metrics:</strong> Calculates doubling time, effective annual growth, and Indian numbering grouping (₹).</span>
+                </div>
+                <div class="highlight-bullet">
+                  <span class="bullet-icon">&#10003;</span>
+                  <span><strong>Export Suite:</strong> Client-side PDF generation, print-friendly stylesheet, and instant formatted clipboard copying.</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">Chart.js</span>
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3</span>
+                <span class="tech-pill">Glassmorphism</span>
+                <span class="tech-pill">html2pdf.js</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm open-modal-btn" data-modal="modal-fincalc">
+                  <span>View Case Details</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </button>
+                <a href="https://github.com/niharr05/FinCalc-Pro" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">
+                  <span>GitHub</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Prominent GitHub Call-to-Action Redirect Button -->
+        <div class="projects-cta-row">
+          <a href="https://github.com/niharr05" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg github-redirect-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            <span>View All Projects on My GitHub</span>
+            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Languages Section -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Background</span>
+          <h2 class="section-title">Education &amp; Languages</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="edu-lang-grid">
+          <!-- Education Column -->
+          <div class="edu-card">
+            <h3 class="subsection-title">
+              <span class="sub-icon">🎓</span> Academic Degrees
+            </h3>
+
+            <div class="degree-item">
+              <div class="degree-header">
+                <h4 class="degree-name">Bachelor of Computer Applications (BCA)</h4>
+                <span class="degree-year">Graduated: 2026</span>
+              </div>
+              <div class="degree-institution">Sardar Vallabhbhai Global University, Ahmedabad</div>
+              <div class="degree-metric">
+                <span class="score-pill">CGPA: 6.75 / 10.00</span>
+              </div>
+            </div>
+
+            <div class="degree-item">
+              <div class="degree-header">
+                <h4 class="degree-name">12th Grade (HSC)</h4>
+                <span class="degree-year">2023</span>
+              </div>
+              <div class="degree-institution">Gujarat Higher Secondary Education Board</div>
+              <div class="degree-metric">
+                <span class="score-pill">Score: 75%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Languages Column -->
+          <div class="lang-card">
+            <h3 class="subsection-title">
+              <span class="sub-icon">🗣️</span> Languages
+            </h3>
+
+            <div class="lang-list">
+              <div class="lang-item">
+                <div class="lang-details">
+                  <span class="lang-name">English</span>
+                  <span class="lang-level">Professional Working Proficiency</span>
+                </div>
+                <div class="lang-bar-bg">
+                  <div class="lang-bar-fill" style="width: 85%;"></div>
+                </div>
+              </div>
+
+              <div class="lang-item">
+                <div class="lang-details">
+                  <span class="lang-name">Hindi</span>
+                  <span class="lang-level">Native Proficiency</span>
+                </div>
+                <div class="lang-bar-bg">
+                  <div class="lang-bar-fill" style="width: 100%;"></div>
+                </div>
+              </div>
+
+              <div class="lang-item">
+                <div class="lang-details">
+                  <span class="lang-name">Gujarati</span>
+                  <span class="lang-level">Native Proficiency</span>
+                </div>
+                <div class="lang-bar-bg">
+                  <div class="lang-bar-fill" style="width: 100%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="communication-note">
+              <span class="note-icon">📝</span>
+              <span>Experienced in delivering technical demonstrations and authoring IEEE-standard project reports with clear scientific rigor.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">Interested in discussing machine learning projects, open roles, or data collaborations? Let's talk.</p>
+        </div>
+
+        <div class="contact-wrapper">
+          <div class="contact-info-pane">
+            <h3 class="contact-heading">Contact Information</h3>
+            <p class="contact-text">
+              Feel free to reach out via email, phone, or LinkedIn. I am based in Ahmedabad and open to both on-site and remote opportunities.
+            </p>
+
+            <div class="contact-links-list">
+              <div class="contact-method-card">
+                <div class="contact-method-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="contact-method-data">
+                  <div class="method-label">Email Address</div>
+                  <a href="mailto:nihar.ramoliya05@gmail.com" class="method-value">nihar.ramoliya05@gmail.com</a>
+                </div>
+                <button class="copy-btn-inline" data-email="nihar.ramoliya05@gmail.com" title="Copy email">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+
+              <div class="contact-method-card">
+                <div class="contact-method-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="contact-method-data">
+                  <div class="method-label">Phone</div>
+                  <a href="tel:+919512023872" class="method-value">+91 95120-23872</a>
+                </div>
+              </div>
+
+              <div class="contact-method-card">
+                <div class="contact-method-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="contact-method-data">
+                  <div class="method-label">Location</div>
+                  <div class="method-value">Ahmedabad, Gujarat, India</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links-row">
+              <a href="https://github.com/niharr05" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>github.com/niharr05</span>
+              </a>
+
+              <a href="https://www.linkedin.com/in/nihar-ramoliya-ml" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                <span>linkedin.com/in/nihar-ramoliya-ml</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Direct Message Box -->
+          <div class="contact-form-pane">
+            <h3 class="contact-heading">Send a Direct Message</h3>
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="sender-name">Your Name</label>
+                <input type="text" id="sender-name" class="form-input" placeholder="e.g. Alex Smith" required>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-email">Your Email</label>
+                <input type="email" id="sender-email" class="form-input" placeholder="name@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message-subject">Subject</label>
+                <input type="text" id="message-subject" class="form-input" placeholder="Machine Learning Role / Project Inquiry" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message-body">Message</label>
+                <textarea id="message-body" class="form-input form-textarea" rows="4" placeholder="Hello Nihar, we reviewed your projects and would love to connect..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <span>Send Message</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-logo">&lt;NR/&gt;</span>
+        <p>&copy; 2026 Nihar Ramoliya. Built for high performance, clarity, and precision.</p>
+      </div>
+
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top">
+          <span>Back to top</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Case Study Modals -->
+  <!-- Modal 1: Nassau Candy -->
+  <div class="modal-overlay" id="modal-nassau" aria-hidden="true">
+    <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-nassau-title">
+      <button class="modal-close-btn" aria-label="Close dialog">&times;</button>
+      <div class="modal-content">
+        <span class="modal-tag">Project Case Study</span>
+        <h3 id="modal-nassau-title" class="modal-title">Product Line Profitability &amp; Margin Analysis — Nassau Candy</h3>
+        <p class="modal-meta">Unified Mentor Pvt. Ltd. &bull; April – July 2026</p>
+
+        <div class="modal-body">
+          <div class="modal-section">
+            <h4>Executive Summary</h4>
+            <p>
+              Engineered an end-to-end Machine Learning profitability system based on 10,194 historical order records across 15 retail products and 3 operational divisions. The goal was to eliminate margin blind spots and provide executive leadership with automated threshold alerting.
+            </p>
+          </div>
+
+          <div class="modal-section">
+            <h4>Key Analytical Findings</h4>
+            <ul>
+              <li><strong>Pareto 80/20 Rule Identified:</strong> 4 out of 15 products accounted for ~80% of net company profits, highlighting high vulnerability to single-product supply disruption.</li>
+              <li><strong>Unsupervised Product Clustering:</strong> Implemented K-Means (k=3) clustering with standard scaling to categorize items into <em>Star Performers</em>, <em>Average Volume</em>, and <em>Dead Weight</em>.</li>
+              <li><strong>Critical Margin Outliers:</strong> Identified Kazookles operating at an unsustainable 8% gross margin, contrasting sharply with the 5 Wonka Bar variants generating 65–71% gross margin.</li>
+            </ul>
+          </div>
+
+          <div class="modal-section">
+            <h4>Live Streamlit Dashboard Architecture</h4>
+            <p>
+              Delivered a 5-module interactive dashboard utilizing Streamlit and Plotly featuring real-time division filters, dynamic date-range selector, margin variance gauges, and automatic threshold warning flags.
+            </p>
+          </div>
+
+          <div class="modal-tech-pills">
+            <span>Python</span>
+            <span>Pandas</span>
+            <span>Scikit-learn</span>
+            <span>K-Means</span>
+            <span>Streamlit</span>
+            <span>Plotly</span>
+            <span>Matplotlib</span>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <a href="https://github.com/niharr05" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Explore Code on GitHub</a>
+          <button class="btn btn-secondary btn-sm close-modal-action">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: European Bank -->
+  <div class="modal-overlay" id="modal-bank" aria-hidden="true">
+    <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-bank-title">
+      <button class="modal-close-btn" aria-label="Close dialog">&times;</button>
+      <div class="modal-content">
+        <span class="modal-tag">Project Case Study</span>
+        <h3 id="modal-bank-title" class="modal-title">Customer Engagement &amp; Retention Analytics — European Bank</h3>
+        <p class="modal-meta">Unified Mentor Pvt. Ltd. &bull; April – July 2026</p>
+
+        <div class="modal-body">
+          <div class="modal-section">
+            <h4>Executive Summary</h4>
+            <p>
+              Conducted extensive customer churn behavioral analytics across 10,000 multi-national customer accounts in France, Germany, and Spain. Proved that user activity and interaction frequency outperform account balance and estimated salary in predicting customer departures.
+            </p>
+          </div>
+
+          <div class="modal-section">
+            <h4>Algorithmic &amp; Metric Innovations</h4>
+            <ul>
+              <li><strong>Relationship Strength Index (RSI):</strong> Formulated a composite engagement index that revealed high-balance yet inactive clients churn at an alarming rate of 32.8%.</li>
+              <li><strong>4-Tier Risk Segmentation:</strong> Applied K-Means (k=4) clustering to categorize account profiles into Low Risk Loyal, Medium Risk, High Risk, and Critical Risk cohorts.</li>
+              <li><strong>Regional Variance Discovery:</strong> Pinpointed that Germany's churn rate stood at 32.4% — precisely double France's 16.2%, directing urgent marketing retention strategy to German branches.</li>
+            </ul>
+          </div>
+
+          <div class="modal-section">
+            <h4>Research Documentation &amp; App</h4>
+            <p>
+              Delivered an interactive 5-module Streamlit application and authored an IEEE-format research paper equipped with 6 publication-standard analytical charts illustrating feature correlations, inertia curves, and retention lift curves.
+            </p>
+          </div>
+
+          <div class="modal-tech-pills">
+            <span>Python</span>
+            <span>Scikit-learn</span>
+            <span>Pandas</span>
+            <span>K-Means</span>
+            <span>Streamlit</span>
+            <span>Plotly</span>
+            <span>Seaborn</span>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <a href="https://github.com/niharr05" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Explore Code on GitHub</a>
+          <button class="btn btn-secondary btn-sm close-modal-action">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: EduPredict AI -->
+  <div class="modal-overlay" id="modal-edupredict" aria-hidden="true">
+    <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-edupredict-title">
+      <button class="modal-close-btn" aria-label="Close dialog">&times;</button>
+      <div class="modal-content">
+        <span class="modal-tag">Project Case Study</span>
+        <h3 id="modal-edupredict-title" class="modal-title">EduPredict AI — Student Performance Predictor</h3>
+        <p class="modal-meta">Full-Stack Machine Learning Web App &bull; Open Source</p>
+
+        <div class="modal-body">
+          <div class="modal-section">
+            <h4>Overview &amp; Purpose</h4>
+            <p>
+              EduPredict AI is an end-to-end full-stack machine learning web application designed to forecast academic marks by analyzing study routines, historical exam grades, and lecture attendance percentages in real time.
+            </p>
+          </div>
+
+          <div class="modal-section">
+            <h4>Machine Learning Architecture &amp; Pipeline</h4>
+            <ul>
+              <li><strong>Predictive Regression Modeling:</strong> Trained and cross-validated predictive regression algorithms via Scikit-Learn on historical student academic datasets.</li>
+              <li><strong>Feature Correlation:</strong> Identified high correlation between consistent study hours, class participation/attendance, and terminal examination performance.</li>
+              <li><strong>Flask REST API:</strong> Deployed serialized machine learning model (.pkl) wrapped in a clean, lightweight Python Flask microservice.</li>
+              <li><strong>Interactive Front-End:</strong> Built with responsive UI, real-time input validations, and instant visual score projection cards.</li>
+            </ul>
+          </div>
+
+          <div class="modal-tech-pills">
+            <span>Python</span>
+            <span>Flask</span>
+            <span>Scikit-Learn</span>
+            <span>Pandas</span>
+            <span>NumPy</span>
+            <span>Tailwind CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <a href="https://github.com/niharr05/EduPredict-AI" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View Repository on GitHub</a>
+          <button class="btn btn-secondary btn-sm close-modal-action">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: FinCalc Pro -->
+  <div class="modal-overlay" id="modal-fincalc" aria-hidden="true">
+    <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-fincalc-title">
+      <button class="modal-close-btn" aria-label="Close dialog">&times;</button>
+      <div class="modal-content">
+        <span class="modal-tag">Project Case Study</span>
+        <h3 id="modal-fincalc-title" class="modal-title">FinCalc Pro — Compound Interest Calculator</h3>
+        <p class="modal-meta">Financial Analytics &amp; Visual Calculator &bull; Open Source</p>
+
+        <div class="modal-body">
+          <div class="modal-section">
+            <h4>Overview &amp; Purpose</h4>
+            <p>
+              A high-precision, banking-grade compound interest calculator engineered to provide users and investors with immediate visual growth projections, doubling time estimates, and downloadable reports without any external backend dependencies.
+            </p>
+          </div>
+
+          <div class="modal-section">
+            <h4>Core Capabilities &amp; UX Engineering</h4>
+            <ul>
+              <li><strong>Multi-Frequency Compounding Engine:</strong> Computes future values across Annual, Semi-Annual, Quarterly, Monthly, and Daily compounding cycles using the standard financial formula: <code>A = P &times; (1 + r/n)^(n&times;t)</code>.</li>
+              <li><strong>Interactive Chart.js Visuals:</strong> Real-time toggle between responsive Doughnut charts (Principal vs Interest breakdown) and growth Bar charts that automatically adapt to light/dark themes.</li>
+              <li><strong>Financial Intelligence Metrics:</strong> Automates Rule of 72 doubling time, effective annual yield, and localized Indian currency formatting (₹).</li>
+              <li><strong>Export &amp; Share Suite:</strong> Integrated instant PDF download via html2pdf.js, print-optimized stylesheet, and one-click formatted clipboard export.</li>
+            </ul>
+          </div>
+
+          <div class="modal-tech-pills">
+            <span>JavaScript</span>
+            <span>Chart.js</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>Glassmorphism</span>
+            <span>html2pdf.js</span>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <a href="https://github.com/niharr05/FinCalc-Pro" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View Repository on GitHub</a>
+          <button class="btn btn-secondary btn-sm close-modal-action">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="alert" aria-live="polite">
+    <svg class="toast-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <span id="toast-message">Copied to clipboard!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
